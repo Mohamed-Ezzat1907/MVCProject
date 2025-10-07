@@ -38,6 +38,40 @@
              */
 
             #endregion
+
+            #region Video 02
+            /*
+             *************** Data Access Layer ***************
+             - Class Library Project
+             - Responsible for interacting with the database
+             - Contains methods for CRUD operations (Create, Read, Update, Delete)
+             - Example: UserRepository, ProductRepository
+                - Common Technologies:
+                    - Entity Framework Core
+                    - Dapper
+                    - ADO.NET
+                - Best Practices:
+                    - Use Repository Pattern
+                    - Implement Unit of Work Pattern
+                    - Handle Exceptions Gracefully
+                    - Optimize Queries for Performance
+                    - Use Asynchronous Programming for I/O Operations
+
+             ***************  Business Logic Layer ***************
+             - Class Library Project
+             - Contains the core business logic of the application
+             - Processes data received from the Data Access Layer
+             - Applies business rules and validations
+
+             ***************  Business Logic Layer ***************
+             -The Presentation Layer is the entry point of the application
+             - Responsible for handling user interactions
+             - Displays data to the user and captures user input
+             - Example: Controllers in MVC, Razor Pages, Blazor Components
+             */
+
+
+            #endregion
         }
     }
 }
