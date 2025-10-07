@@ -72,6 +72,40 @@
 
 
             #endregion
+
+            #region Video 03
+
+            /*
+              *************** Dependency Injection  ***************
+              - A design pattern used to implement IoC (Inversion of Control)
+              - Allows the creation of dependent objects outside of a class and provides those objects to a class in different ways
+              - Instead of the object creating its own dependencies, we pass them to it from the outside (CLR).
+              -The purpose of DI
+                    - To achieve loose coupling between classes and their dependencies
+                    - To enhance testability and maintainability of the code
+                - Common Types of Dependency Injection:
+                    - Constructor Injection
+                    - Property Injection
+                    - Method Injection
+                - Benefits of Dependency Injection:
+                    - Improved Code Maintainability
+                    - Enhanced Testability
+                    - Reduced Boilerplate Code
+                    - Better Separation of Concerns
+                - Dependency Injection in ASP.NET Core:
+                    - Built-in support for Dependency Injection
+                    - Services are registered in the Startup.cs file using the IServiceCollection interface
+                    - Services can be injected into controllers, middleware, and other services via constructor injection
+                - Example of Registering Services in ASP.NET Core:
+                        public void ConfigureServices(IServiceCollection services)
+                        {
+                            services.AddScoped<IUserRepository, UserRepository>();
+                            services.AddScoped<IUserService, UserService>();
+                            services.AddControllersWithViews();
+                        }
+             */
+
+            #endregion
         }
     }
 }
